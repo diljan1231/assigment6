@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Market Summary</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .tab {
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .tab.active {
+      background-color: #3a7c3a;
+      color: white;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: right;
+    }
+    th:first-child, td:first-child {
+      text-align: left;
+    }
+    .positive {
+      color: green;
+    }
+    .negative {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <div class="tab active">MARKET SUMMARY MAIN BOARD</div>
+    <div class="tab">MARKET SUMMARY GEM BOARD</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>SCRIP</th>
+        <th>PRICE</th>
+        <th>HIGH</th>
+        <th>LOW</th>
+        <th>CHANGE</th>
+        <th>VOLUME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PREMA</td>
+        <td>44.84</td>
+        <td>44.84</td>
+        <td>39.5</td>
+        <td class="positive">4.08</td>
+        <td>38,761,905</td>
+      </tr>
+      <tr>
+        <td>FCCL</td>
+        <td>47.89</td>
+        <td>49.85</td>
+        <td>47.2</td>
+        <td class="positive">0.33</td>
+        <td>36,170,971</td>
+      </tr>
+      <tr>
+        <td>SSGC</td>
+        <td>36.07</td>
+        <td>36.07</td>
+        <td>34.55</td>
+        <td class="positive">3.28</td>
+        <td>32,384,781</td>
+      </tr>
+      <tr>
+        <td>WTL</td>
+        <td>1.26</td>
+        <td>1.28</td>
+        <td>1.24</td>
+        <td class="negative">-0.01</td>
+        <td>22,631,360</td>
+      </tr>
+      <tr>
+        <td>PRL</td>
+        <td>31.48</td>
+        <td>31.6</td>
+        <td>29.02</td>
+        <td class="positive">1.59</td>
+        <td>20,536,680</td>
+      </tr>
+      <tr>
+        <td>DGKC</td>
+        <td>148.5</td>
+        <td>154.45</td>
+        <td>146.4</td>
+        <td class="negative">-3.26</td>
+        <td>19,418,708</td>
+      </tr>
+      <tr>
+        <td>POWER</td>
+        <td>15.15</td>
+        <td>15.55</td>
+        <td>14.8</td>
+        <td class="positive">0.05</td>
+        <td>19,235,608</td>
+      </tr>
+    </tbody>
+  </table>
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h1 {
+      color: #2c7a2d;
+    }
+    select {
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+    .chart {
+      width: 100%;
+      height: 200px;
+      background-color: #d0eecd;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    td:first-child {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Market Activity</h1>
+    <label for="indexSelect">Index:</label>
+    <select id="indexSelect">
+      <option value="kse100">KSE 100 Index</option>
+    </select>
+
+    <div class="chart">
+      <!-- Placeholder for market chart -->
+      <p style="text-align:center; padding-top:90px;">[Chart Placeholder]</p>
+    </div>
+
+    <h2>Market Highlights</h2>
+    <table>
+      <tr><td>Market Status</td><td>Open</td></tr>
+      <tr><td>Current Index</td><td>119,741.20</td></tr>
+      <tr><td>Change</td><td>1204.68</td></tr>
+      <tr><td>Percent Change</td><td>1.02%</td></tr>
+      <tr><td>High</td><td>119,741.20</td></tr>
+      <tr><td>Low</td><td>118,871.13</td></tr>
+      <tr><td>Volume</td><td>147,365,299</td></tr>
+      <tr><td>Previous Close</td><td>118,536.52</td></tr>
+      <tr><td>Value</td><td>11,899,845,123</td></tr>
+    </table>
+  </div>
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    h2 {
+      background: #2e7d32;
+      color: white;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      padding: 10px;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    .up {
+      color: green;
+    }
+    .down {
+      color: red;
+    }
+    .button-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .add-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .add-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Recent Quotes - Futures</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Price</th>
+          <th>Change</th>
+          <th>% Change</th>
+          <th>Volume</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AABS</td>
+          <td>780.01</td>
+          <td class="down">-2.59</td>
+          <td class="down">-0.32%</td>
+          <td class="down">0.001</td>
+        </tr>
+        <tr>
+          <td>KAPCO</td>
+          <td>31.13</td>
+          <td class="down">-0.36</td>
+          <td class="down">-1.14%</td>
+          <td class="down">0.308</td>
+        </tr>
+        <tr>
+          <td>KML</td>
+          <td>32.8</td>
+          <td class="down">-2.75</td>
+          <td class="down">-7.87%</td>
+          <td class="down">0.007</td>
+        </tr>
+        <tr>
+          <td>OGDC</td>
+          <td>212.5</td>
+          <td class="down">-5.99</td>
+          <td class="down">-2.75%</td>
+          <td class="down">9.743</td>
+        </tr>
+        <tr>
+          <td>PAEL</td>
+          <td>46.41</td>
+          <td class="up">0.83</td>
+          <td class="up">1.83%</td>
+          <td class="up">7.234</td>
+        </tr>
+        <tr>
+          <td>PPL</td>
+          <td>169.14</td>
+          <td class="up">1.88</td>
+          <td class="up">1.11%</td>
+          <td class="up">11.785</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="button-container">
+      <button class="add-btn">Add symbols</button>
+    </div>
+  </div>
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #333;
+    }
+
+    .insights-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .insight-box {
+      background: white;
+      width: 150px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .insight-box img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .insight-text {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .nav-button {
+      font-size: 20px;
+      cursor: pointer;
+      align-self: center;
+    }
+
+    .insight-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>EXCHANGE INSIGHTS</h2>
+
+  <div class="insight-wrapper">
+    <div class="nav-button">&#9664;</div>
+
+    <div class="insights-container">
+      <div class="insight-box">
+        <img src="c:\mypyproject\diljan\Icon-07.png" alt="Handshake">
+        <div class="insight-text">Public Comments on the Draft Prospectus of Image REIT</div>
+      </div>
+
+      <div class="insight-box">
+        <img src="c:\mypyproject\diljan\Icon-06.png" alt="Green Sukuk">
+        <div class="insight-text">Green Sukuk – Term Sheet</div>
+      </div>
+
+      <div class="insight-box">
+        <img src="c:\mypyproject\diljan\Icon-047.png" alt="Subscription">
+        <div class="insight-text">Subscription for NETS International Communication Limited</div>
+      </div>
+
+      <div class="insight-box">
+        <img src="c:\mypyproject\diljan\Icon-013.png" alt="Budget Proposal">
+        <div class="insight-text">Proposal of PSX Federal Budget for FY 2025-26</div>
+      </div>
+
+      <div class="insight-box">
+        <img src="c:\mypyproject\diljan\publicomments_1.png" alt="Comments">
+        <div class="insight-text">Public Comments and PSX Response Papers</div>
+      </div>
+
+      <div class="insight-box">
+        <img src="c:\mypyproject\diljan\Icon-03.png" alt="Financial Statements">
+        <div class="insight-text">Financial Statements of Unlisted Licensed Companies</div>
+      </div>
+    </div>
+
+    <div class="nav-button">&#9654;</div>
+  </div>
+
+
+<div class="contact-form">
+  <h2>GET IN TOUCH</h2>
+  <form action="#" method="POST" >
+    <input type="text" name="name" placeholder="Name:" required> <br> <br>
+    <input type="email" name="email" placeholder="Your email address:" required> <br><br>
+    <input type="text" name="contact" placeholder="Contact:" required> <br> <br>
+    <select name="query" required>
+      <option value="">Select query</option>
+      <option value="general">General</option>
+      <option value="support">Support</option>
+      <option value="feedback">Feedback</option>
+    </select>
+    <textarea name="feedback" placeholder="Please write your feedback here"></textarea>
+    <div class="captcha">
+      <input type="checkbox" required> I'm not a robot
+      
+      <br><br>
+    <button type="submit" class="submit-btn">SUBMIT</button>
+  </form>
+</div>
+
+
+
+</body>
+</html>
